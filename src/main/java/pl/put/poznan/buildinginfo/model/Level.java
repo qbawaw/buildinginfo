@@ -18,6 +18,11 @@ public class Level extends Location {
     }
 
     @Override
+    public String type() {
+        return "poziom";
+    }
+
+    @Override
     public double getHeating() {
         return children.stream().mapToDouble(Location::getHeating).sum();
     }
@@ -27,6 +32,7 @@ public class Level extends Location {
         return children.stream().mapToDouble(Location::getLight).sum();
     }
 
+    @Override
     public List<Location> getChildren() {
         return children;
     }
