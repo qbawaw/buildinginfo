@@ -17,6 +17,7 @@ public class LocationRepository {
 
         Room room1 = new Room();
         room1.setId(1L);
+        room1.setName("Pomieszczenie 101");
         room1.setArea(50);
         room1.setCube(150);
         room1.setHeating(300);
@@ -24,6 +25,7 @@ public class LocationRepository {
 
         Room room2 = new Room();
         room2.setId(2L);
+        room2.setName("Pomieszczenie 102");
         room2.setArea(40);
         room2.setCube(120);
         room2.setHeating(280);
@@ -31,11 +33,13 @@ public class LocationRepository {
 
         Level level1 = new Level();
         level1.setId(3L);
+        level1.setName("Pietro 1");
         level1.getChildren().add(room1);
         level1.getChildren().add(room2);
 
         Building building = new Building();
         building.setId(4L);
+        building.setName("Budynek A");
         building.getChildren().add(level1);
 
         locations.put(room1.getId(), room1);
