@@ -21,5 +21,8 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: Make Maven Wrapper executable
+        run: chmod +x mvnw
+
       - name: Build with Maven Wrapper
         run: ./mvnw clean package
