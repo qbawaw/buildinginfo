@@ -34,7 +34,7 @@ public class Room extends Location {
 
     @Override
     public List<Location> getChildren() {
-        return List.of(); // returns empty list
+        return List.of(); 
     }
     public void setArea(double area) {
         this.area = area;
