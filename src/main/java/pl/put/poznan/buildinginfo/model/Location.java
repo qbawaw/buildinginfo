@@ -11,8 +11,7 @@ public abstract class Location {
     public abstract double getHeating();
     public abstract double getLight();
     public abstract String type();
-    public abstract List<Location> getChildren(); // returns list of children
-
+    public abstract List<Location> getChildren(); 
     public Long getId() {
         return id;
     }
