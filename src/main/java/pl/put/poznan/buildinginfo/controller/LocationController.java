@@ -24,12 +24,13 @@ public class LocationController {
 
 
     @GetMapping("/{id}/children")
-    public List<Long> getChildren(@PathVariable Long id) {
+    public Map<String,List<Long>> getChildren(@PathVariable Long id) {
         Location location = repository.findById(id);
-        return location.getChildren().stream()
+        return Map.of("children",location.getChildren().stream()
                 .map(Location::getId)
-                .toList();
+                .toList());
     }
+
 
 
 

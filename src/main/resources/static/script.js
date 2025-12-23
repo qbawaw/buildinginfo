@@ -35,6 +35,7 @@ fetchBtn.addEventListener("click", () => {
                 document.getElementById(elementId).textContent = data[elementId];
             });
     }
+    fetchDatastring("children"),
     fetchDatastring("type"),
     fetchData("area"),
     fetchData("cube"),
