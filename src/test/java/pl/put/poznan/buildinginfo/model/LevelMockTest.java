@@ -1,4 +1,4 @@
-package pl.put.poznan.buildinginfo.model; 
+package pl.put.poznan.buildinginfo.model;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
