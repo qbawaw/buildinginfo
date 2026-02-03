@@ -14,7 +14,7 @@ public class LevelJMockTest {
     @Mock Location room1;
     @Mock Location room2;
     @Mock Location room3;
-
+    
     @BeforeEach
     void setUp() {
         level = new Level();
